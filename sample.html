@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <script type="text/javascript" src="main.js"> </script> -->
+
+</head>
+<body>
+<form onsubmit="return results();"  method="post">
+  <input type="text" name="name" id="name" size="30" maxlength="70"><br>
+  <input type="email" name="email" id="email" size="30" maxlength="70"><br>
+  <input type="number" name="number" id="number" size="30" maxlength="70"><br>
+  <input type="text" name="disig" id="disig" size="30" maxlength="70"><br>
+  <input type="submit" id="submit"><br>
+</form>
+
+<p id="f2">name</p>
+<p id="f3">email</p>
+<p id="f4">mobile</p>
+<p id="f5">disig</p>
+
+</body>
+<script type="text/javascript">
+var name;
+var email;
+var mobile;
+var disig;
+function results() {
+  name = document.getElementById("name").value;
+  email = document.getElementById("email").value;
+  mobile = document.getElementById("number").value;
+  disig = document.getElementById("disig").value;
+
+
+}
+window.onload = function() {
+    /* Add your logic here */
+    document.getElementById('f2').innerHTML=name;
+
+}
+
+</script>
+
+</html>
